@@ -9,8 +9,6 @@ public class BrightnessRegulator : MonoBehaviour {
 	private float magEmission = 2.0f;
 	private int degree = 0;
 	private int speed = 10;
-	public int score;
-	private Game p;
 	
 	Color defaultColor = Color.white;
 
@@ -45,13 +43,5 @@ public class BrightnessRegulator : MonoBehaviour {
     {
 		this.degree = 180;
 		
-		if (tag == "SmallStarTag" || tag == "SmallCloudTag")
-		{
-			FindObjectOfType<Game>().AddPoint(10);
-		}
-		else if (tag == "LargeStarTag" || tag == "LargeCloudTag")
-		{
-			FindObjectOfType<Game>().AddPoint(20);
-		}
 	}
 }
